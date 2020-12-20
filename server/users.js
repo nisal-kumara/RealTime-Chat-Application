@@ -7,11 +7,14 @@ const addUser = ({ id, name, room }) => {
     const existingUser = users.find((user) => user.name === name && user.room === room);
 
     if (existingUser) {
-        return { error: "Username is taken" };
+        return { error: "Username is unavailable" };
     }
+    //const splitName = name.split("_")[0];
+    //console.log(splitName);
 
-    const user = { id, name, room };
+    const user = { id: id, name: name, room: room };
     users.push(user);
+    // console.log(users);
 
     return { user }
 }

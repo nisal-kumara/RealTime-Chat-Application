@@ -1,0 +1,23 @@
+.profileContainer{
+    text-align: center;  
+    background-color: #ffffff2f;
+    /* background-color: #255b727a; */
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border-radius: 4px; */
+    height: 60px;
+    min-height: 60px;
+    border-top-left-radius: 7px;
+}
+
+.profileAvatar img{
+    width: 45px;
+    margin: 0 5px 0 5px;
+    
+}
+
+.profileContainer h3, h2{
+    margin: 0; 
+}

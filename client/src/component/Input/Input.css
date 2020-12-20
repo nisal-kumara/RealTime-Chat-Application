@@ -1,12 +1,17 @@
 .form {
     display: flex;
-    border-top: 2px solid #D3D3D3;
+    border-top: 2px solid #ffffff;
+    background-color: #ffffff;
+    position: relative;
+    height: 50px;
+    min-height: 50px;
+    border-bottom-right-radius: 7px;
   }
   
   .input {
     border: none;
     border-radius: 0;
-    padding: 5%;
+    padding: 1% 1% 1% 2%;
     width: 80%;
     font-size: 1.2em;
   }
@@ -16,12 +21,22 @@
   }
   
   .sendButton {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #2979FF;
-    padding: 20px;
+    background: #ffffff;
+    /* padding: 10px; */
     display: inline-block;
     border: none;
-    width: 20%;
+    /* border-left: 1px solid gray; */
+    /* width: 10%; */
+    padding: 1%;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    top: 0px;
+    cursor: pointer;
+  }
+  .sendButton img{
+    width: 35px;
+  }
+  .sendButton:focus{
+    outline: none;
   }
