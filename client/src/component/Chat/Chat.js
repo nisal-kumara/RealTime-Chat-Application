@@ -49,6 +49,10 @@ const Chat = ({ location }) => {
         socket.on("roomData", ({ users }) => {
             setUsers(users);
         });
+        //fixed
+        return () => {
+            socket.off();
+        }
     }, [messages, users]);
 
 
